@@ -10,7 +10,7 @@ class SelectHeight extends StatefulWidget {
 }
 
 class _SelectHeightState extends State<SelectHeight> {
-  int selectedIndex = 0;
+  int selectedIndex = 165;
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +28,7 @@ class _SelectHeightState extends State<SelectHeight> {
                 children: [
                   Text(
                     "WHAT'S YOUR HEIGHT ",
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 22,
@@ -37,10 +38,11 @@ class _SelectHeightState extends State<SelectHeight> {
                     height: 6,
                   ),
                   Text(
-                    "in Centimeters",
+                    "This helps us create your personalized plan",
+                    textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Colors.yellowAccent,
-                        fontSize: 25,
+                        color: Colors.white,
+                        fontSize: 16,
                         fontWeight: FontWeight.bold),
                   ),
                   SizedBox(
@@ -54,65 +56,67 @@ class _SelectHeightState extends State<SelectHeight> {
               width: MediaQuery.of(context).size.width,
               child: WheelChooser.custom(
                 itemSize: 80,
-                onValueChanged: (a) {
-                  print(a);
-                  this.selectedIndex = a;
+                startPosition: 165,
+                onValueChanged: (selectedIndex) {
+                  this.selectedIndex = selectedIndex;
                   setState(() {});
                 },
                 children: getList(context),
               ),
-            ))
+            )),
           ],
         ),
       ),
     );
   }
 
-  List<Widget> getList(context) {
+  List<Widget> getList(BuildContext context) {
     List<Widget> textList = [];
-      var column = Column(
+    for (int x = 0; x <= 250; x++) {
+      textList.add(Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            height: selectedIndex == 0 ? 2 : 0,
+            height: selectedIndex == x ? 2 : 0,
             width: MediaQuery.of(context).size.width / 2,
             color: AppColors.yellow,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 15),
-            child: Text(
-              "165 cm",
-              style: TextStyle(color: Colors.white, fontSize: 20,fontWeight: FontWeight.w900),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Text(
+                  "$x ",
+                  style: TextStyle(
+                      color: selectedIndex == x
+                          ? Colors.white
+                          : AppColors.lightGrey,
+                      fontSize: 35,
+                      fontWeight: FontWeight.w900),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 5),
+                  child: Text(
+                    "cm",
+                    style: TextStyle(
+                        color: selectedIndex == x
+                            ? Colors.white
+                            : AppColors.lightGrey),
+                  ),
+                ),
+              ],
             ),
           ),
           Container(
-            height: selectedIndex == 0 ? 2 : 0,
+            height: selectedIndex == x ? 2 : 0,
             width: MediaQuery.of(context).size.width / 2,
             color: AppColors.yellow,
           ),
         ],
-      );
-
-      for(int x= 0; x<200;x++ ){
-        textList.add(column);
-      }
-
-
-
-
-
+      ));
+    }
     return textList;
-  }
-}
-
-
-
-void fun(){
-  int x = 90;
-
-  if (x % 2 == 0) {
-    print("even");
-  } else {
-    print("odd");
   }
 }
