@@ -1,4 +1,3 @@
-import 'package:dev_muscle/views/info_selection/goal_properties.dart';
 import 'package:flutter/material.dart';
 
 import '../../Utils/app_functions.dart';

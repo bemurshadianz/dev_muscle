@@ -9,7 +9,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6c5a898-07ab-404c-ac65-2df4c545a6e5" name="Changes" comment="" />
+    <list default="true" id="e6c5a898-07ab-404c-ac65-2df4c545a6e5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/info_selection/goal_select_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/info_selection/goal_select_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/info_selection/level_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/info_selection/level_screen.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +48,7 @@
     "dart.analysis.tool.window.visible": "false",
     "io.flutter.reload.alreadyRun": "true",
     "last_opened_file_path": "C:/Users/khura/AndroidStudioProjects/dev_muscle",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>

@@ -1,8 +1,6 @@
 import 'package:dev_muscle/Utils/app_functions.dart';
 import 'package:flutter/material.dart';
 
-import 'level_selection_properties.dart';
-
 class LevelScreen extends StatelessWidget {
   const LevelScreen({Key? key}) : super(key: key);
 
