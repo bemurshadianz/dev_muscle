@@ -21,8 +21,3 @@ class App extends StatelessWidget {
     return const SplashView();
   }
 }
-//hello this is comment from hamza
-//sarfraz here
-//hello this is comment from hamza
-
-//hello this is comment from hamza
