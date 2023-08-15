@@ -13,18 +13,18 @@ class GoalScreen extends StatelessWidget {
         children: [
           customText("what's your goal".toUpperCase(), "this help us creat your persnalized plan".toUpperCase()),
           Center(
-            child: ListWheelScrollView.useDelegate(
-              itemExtent: 70,
-              perspective: 0.05,
-              diameterRatio: 2,
-              physics: FixedExtentScrollPhysics(),
-              childDelegate: ListWheelChildBuilderDelegate(
-                  childCount: 77,
-                  builder: (context, index) {
-                    return GoalProperties();
-                  }),
-            ),
-          ),
+              // child: ListWheelScrollView.useDelegate(
+              //   itemExtent: 70,
+              //   perspective: 0.05,
+              //   diameterRatio: 2,
+              //   physics: FixedExtentScrollPhysics(),
+              //   childDelegate: ListWheelChildBuilderDelegate(
+              //       childCount: 77,
+              //       builder: (context, index) {
+              //         return GoalProperties();
+              //       }),
+              // ),
+              ),
         ],
       ),
     );
