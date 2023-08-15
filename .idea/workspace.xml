@@ -9,7 +9,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6c5a898-07ab-404c-ac65-2df4c545a6e5" name="Changes" comment="comment line" />
+    <list default="true" id="e6c5a898-07ab-404c-ac65-2df4c545a6e5" name="Changes" comment="comment added from hamza">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/info_selection/level_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/info_selection/activity_level_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/info_selection/select_gender.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/info_selection/select_gender.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/info_selection/select_height.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/info_selection/select_height.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692081004071</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="comment added from hamza">
+      <created>1692081481096</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692081481096</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,7 +145,8 @@
     <MESSAGE value="wheel commented in goal_select_screen.dart" />
     <MESSAGE value="wheel un-commented in goal_select_screen.dart" />
     <MESSAGE value="comment line" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment line" />
+    <MESSAGE value="comment added from hamza" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment added from hamza" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -141,6 +155,11 @@
           <url>file://$PROJECT_DIR$/lib/utils/colors.dart</url>
           <line>3</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/views/info_selection/select_height.dart</url>
+          <line>103</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

@@ -1,3 +1,4 @@
+import 'package:dev_muscle/views/info_selection/select_height.dart';
 import 'package:dev_muscle/views/intro_views/splash_view.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,6 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SplashView();
+    return  SelectHeight();
   }
 }
