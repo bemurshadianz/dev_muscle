@@ -18,17 +18,45 @@ class BottomButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(100),
         ),
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 35),
+          padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 30),
           child: Row(
             mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
                 title,
                 style: const TextStyle(color: Colors.black),
               ),
               const Icon(Icons.play_arrow),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class GoBackButton extends StatelessWidget {
+  final VoidCallback? onTap;
+  final Color buttonColor;
+  const GoBackButton({Key? key, required this.onTap, this.buttonColor = AppColors.lightGrey}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        decoration: BoxDecoration(
+          color: buttonColor,
+          shape: BoxShape.circle,
+        ),
+        child: const Padding(
+          padding: EdgeInsets.all(11),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(Icons.arrow_back),
             ],
           ),
         ),

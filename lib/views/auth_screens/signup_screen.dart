@@ -1,5 +1,10 @@
 import 'package:dev_muscle/Utils/app_assets.dart';
+import 'package:dev_muscle/views/auth_screens/login_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../../Utils/app_functions.dart';
+import '../../utils/colors.dart';
+import '../utils_screens/bottom_button.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({Key? key}) : super(key: key);
@@ -17,84 +22,134 @@ class _SignupScreenState extends State<SignupScreen> {
         children: [
           Stack(
             children: [
-              Image(image: AssetImage(AppAssets.signupscreen)),
+              Image.asset(AppAssets.signupscreen),
               Row(
                 children: [
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      goto(context, LogInScreen());
+                    },
                     child: Text("Login"),
                   ),
                   const SizedBox(
                     width: 20,
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      goto(context, SignupScreen());
+                    },
                     child: Text("Sign up"),
                   ),
                   CircleAvatar(),
+                  const Text(
+                    'HELLO ROKIES,',
+                    style: TextStyle(fontSize: 33, fontWeight: FontWeight.bold, color: Colors.white),
+                  ),
+                  const Text(
+                    'ENTER YOUR INFORMATION BELOW OR\nLOGIN WITH OTHER ACCOUNT',
+                    style: TextStyle(fontSize: 33, fontWeight: FontWeight.bold, color: Colors.white),
+                  ),
                 ],
               ),
-              Column(
+            ],
+          ),
+          Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(20),
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                    hintText: 'Email',
+                    suffixIcon: Icon(
+                      Icons.download_done_outlined,
+                      color: AppColors.lightGrey,
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20),
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                    hintText: 'Password',
+                    suffixIcon: Icon(
+                      Icons.visibility,
+                      color: AppColors.lightGrey,
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20),
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                    hintText: 'Password again',
+                    suffixIcon: const Icon(
+                      Icons.visibility,
+                      color: AppColors.lightGrey,
+                    ),
+                  ),
+                ),
+              ),
+              Row(
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(20),
-                    child: TextFormField(
-                      decoration: const InputDecoration(
-                        hintText: 'Email',
-                        prefixIcon: Icon(Icons.download_done_outlined),
-                      ),
-                    ),
+                  const Align(
+                    alignment: Alignment.bottomRight,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(20),
-                    child: TextFormField(
-                      decoration: const InputDecoration(
-                        hintText: 'Password',
-                        prefixIcon: Icon(
-                          Icons.lock,
-                          color: Colors.blueGrey,
-                        ),
-                        suffixIcon: const Icon(Icons.visibility),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(20),
-                    child: TextFormField(
-                      decoration: const InputDecoration(
-                        hintText: 'Password again',
-                        prefixIcon: Icon(
-                          Icons.lock,
-                          color: Colors.blueGrey,
-                        ),
-                        suffixIcon: const Icon(Icons.visibility),
+                  TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      "Forgot Password",
+                      style: TextStyle(
+                        color: Colors.yellow,
+                        fontSize: 15,
+                        fontWeight: FontWeight.w900,
                       ),
                     ),
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      const Align(
-                        alignment: Alignment.bottomRight,
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          "Forgot Password",
-                          style: TextStyle(
-                            color: Colors.yellow,
-                            fontSize: 15,
-                            fontWeight: FontWeight.w900,
-                          ),
+                      Container(
+                        decoration: const BoxDecoration(shape: BoxShape.circle),
+                        child: InkWell(
+                          onTap: () {
+                            const Icon(
+                              Icons.apple_sharp,
+                              color: AppColors.lightGrey,
+                            );
+                          },
                         ),
                       ),
-                      Image(image: AssetImage(AppAssets.applepic)),
-                      Image(image: AssetImage(AppAssets.googlepic)),
+                      Container(
+                        decoration: const BoxDecoration(shape: BoxShape.circle),
+                        child: InkWell(
+                          onTap: () {
+                            const Icon(
+                              Icons.g_mobiledata,
+                              color: AppColors.lightGrey,
+                            );
+                          },
+                        ),
+                      ),
+
+                      // Image(image: AssetImage(AppAssets.applepic)),
+                      // Image(image: AssetImage(AppAssets.googlepic)),
+                      Expanded(child: Container()),
+                      BottomButton(
+                        title: ('Login'),
+                        onTap: () {
+                          goto(context, SignupScreen());
+                        },
+                      ),
                     ],
-                  )
+                  ),
+                  // Image(image: AssetImage(AppAssets.applepic)),
+                  // Image(image: AssetImage(AppAssets.googlepic)),
                 ],
               )
             ],
-          ),
+          )
         ],
       ),
     );

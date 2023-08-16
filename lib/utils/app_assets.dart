@@ -10,7 +10,7 @@ class AppAssets {
   static String genderm = "assets/genderm.png";
   static String genderf = "assets/genderf.png";
 
-  static String loginpic = "assets/loginpic_1.png";
+  static String loginpic = "assets/ladyjym2.jpg";
   static String loginavatarpic = "assets/loginavatarpic.png";
 
   static String googlepic = "assets/googlepic.png";

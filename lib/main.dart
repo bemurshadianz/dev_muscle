@@ -1,11 +1,10 @@
-import 'package:dev_muscle/views/info_selection/select_height.dart';
-import 'package:dev_muscle/views/intro_views/splash_view.dart';
+import 'package:dev_muscle/views/auth_screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(
     MaterialApp(
-      home: const App(), //ygugyujgytyuyuyuuytyuty
+      home: const App(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.black,
@@ -19,6 +18,6 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SelectHeight();
+    return SignupScreen();
   }
 }

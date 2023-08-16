@@ -1,4 +1,4 @@
-import 'package:dev_muscle/views/info_selection/select_height.dart';
+import 'package:dev_muscle/views/info_selection/age_select_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../Utils/app_functions.dart';
@@ -96,7 +96,7 @@ class _SelectGenderState extends State<SelectGender> {
                 BottomButton(
                   title: ('Next'),
                   onTap: () {
-                    goto(context,  SelectHeight());
+                    goto(context, AgeSelect());
                   },
                 ),
               ],
