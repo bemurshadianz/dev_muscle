@@ -10,20 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6c5a898-07ab-404c-ac65-2df4c545a6e5" name="Changes" comment="new cooment push">
-      <change afterPath="$PROJECT_DIR$/assets/ladyjym2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/views/auth_screens/varification_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/app_assets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/app_assets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/auth_screens/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/auth_screens/login_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/auth_screens/signup_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/auth_screens/signup_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/info_selection/activity_level_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/info_selection/activity_level_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/info_selection/age_select_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/info_selection/age_select_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/info_selection/goal_select_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/info_selection/goal_select_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/info_selection/select_gender.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/info_selection/select_gender.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/info_selection/select_height.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/info_selection/select_height.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/utils_screens/bottom_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/utils_screens/bottom_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/auth_screens/forgotpassword.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/auth_screens/forgotpassword.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

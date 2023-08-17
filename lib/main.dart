@@ -1,4 +1,4 @@
-import 'package:dev_muscle/views/auth_screens/signup_screen.dart';
+import 'package:dev_muscle/views/auth_screens/forgotpassword.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,6 +18,6 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SignupScreen();
+    return ForgotPassword();
   }
 }
