@@ -289,6 +289,7 @@ class _LogInScreenState extends State<LogInScreen> {
                   child: Row(
                     children: [
                       CircleAvatar(
+                        backgroundColor: Colors.grey.shade900,
                         child: IconButton(
                           icon: Icon(
                             Icons.apple_sharp,
@@ -301,8 +302,12 @@ class _LogInScreenState extends State<LogInScreen> {
                         padding: EdgeInsets.only(left: 10, right: 10),
                       ),
                       CircleAvatar(
+                        backgroundColor: Colors.grey.shade900,
                         child: IconButton(
-                          icon: Icon(Icons.g_mobiledata),
+                          icon: Icon(
+                            Icons.g_mobiledata,
+                            color: Colors.white,
+                          ),
                           onPressed: () {},
                           iconSize: 25,
                         ),
