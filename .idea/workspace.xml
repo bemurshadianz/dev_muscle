@@ -9,16 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6c5a898-07ab-404c-ac65-2df4c545a6e5" name="Changes" comment="plz check auth screens need help there">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/styles.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/auth_screens/forgotpassword.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/auth_screens/forgotpassword.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/auth_screens/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/auth_screens/login_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/auth_screens/varification_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/auth_screens/varification_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/utils_screens/bottom_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/utils_screens/bottom_button.dart" afterDir="false" />
-    </list>
+    <list default="true" id="e6c5a898-07ab-404c-ac65-2df4c545a6e5" name="Changes" comment="need help in verificatin screen" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692276369786</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="need help in verificatin screen">
+      <created>1692889937026</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1692889937026</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,7 +163,8 @@
     <MESSAGE value="comment added from hamza" />
     <MESSAGE value="column added in wheel as list loop of 200" />
     <MESSAGE value="plz check auth screens need help there" />
-    <option name="LAST_COMMIT_MESSAGE" value="plz check auth screens need help there" />
+    <MESSAGE value="need help in verificatin screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="need help in verificatin screen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
