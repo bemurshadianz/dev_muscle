@@ -14,14 +14,14 @@ class _ForgotPasswordState extends State<ForgotPassword> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        leading: BackButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-      ),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.black,
+      //   leading: BackButton(
+      //     onPressed: () {
+      //       Navigator.pop(context);
+      //     },
+      //   ),
+      // ),
       body: Column(
         children: [
           customText(
@@ -66,24 +66,28 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                     return VarificationScreen();
                   }));
                 },
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.yellow,
-                    borderRadius: BorderRadius.circular(100),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 25, horizontal: 100),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text(
-                          "Send",
-                          style: TextStyle(color: Colors.black, fontSize: 20),
-                        ),
-                        Icon(Icons.play_arrow),
-                      ],
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    decoration: BoxDecoration(
+                      color: Colors.yellow,
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child: const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 15),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Send",
+                            style: TextStyle(color: Colors.black, fontSize: 20),
+                          ),
+                          Icon(Icons.play_arrow),
+                        ],
+                      ),
                     ),
                   ),
                 ),

@@ -10,17 +10,23 @@ class VarificationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
-        leading: BackButton(
+        leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
           },
+          icon: IconButton(
+            icon: Icon(Icons.arrow_back_ios),
+            splashRadius: 100,
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
         ),
       ),
       body: Column(
         children: [
           customText(
-              "VARIFICATION",
+              "VERIFICATION",
               "CHECK YOUR EMAIL.WE'VE SENT YOU\n"
                   "THE PIN AT YOUR EMAIL"),
           const Text(
