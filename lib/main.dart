@@ -1,5 +1,4 @@
-import 'package:dev_muscle/views/auth_screens/login_screen.dart';
-import 'package:dev_muscle/views/auth_screens/varification_screen.dart';
+import 'package:dev_muscle/utils/bottom_navigation_exemple.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,6 +18,6 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const VerificationScreen();
+    return const BottomNavigationExample();
   }
 }

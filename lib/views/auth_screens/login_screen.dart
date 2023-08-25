@@ -96,6 +96,7 @@ class _LogInScreenState extends State<LogInScreen> {
 
                         if (buttonValue == 0)
                           CircleAvatar(
+                            backgroundColor: Colors.grey,
                             child: Image(
                               image: AssetImage(AppAssets.applepic),
                             ),

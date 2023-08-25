@@ -1,3 +1,4 @@
+import 'package:dev_muscle/home_screen/first_home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/otp_field_style.dart';
@@ -17,27 +18,32 @@ class _VerificationScreenState extends State<VerificationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 45,left: 25),
+            padding: const EdgeInsets.only(top: 45, left: 25),
             child: Row(
-
               children: [
-                Container(
-                  decoration: const BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: AppColors.lightGrey
-                  ),
-                  child:  const Padding(
-                    padding: EdgeInsets.all(6.0),
-                    child: Icon(Icons.arrow_back_sharp,color: Colors.white,),
-                  )),
+                InkWell(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  child: Container(
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: AppColors.lightGrey,
+                      ),
+                      child: const Padding(
+                        padding: EdgeInsets.all(6.0),
+                        child: Icon(
+                          Icons.arrow_back_sharp,
+                          color: Colors.white,
+                        ),
+                      )),
+                ),
               ],
             ),
           ),
-
           customText(
               "VERIFICATION",
               "CHECK YOUR EMAIL.WE'VE SENT YOU\n"
@@ -46,17 +52,13 @@ class _VerificationScreenState extends State<VerificationScreen> {
             "Did you receive any code",
             style: TextStyle(color: AppColors.yellow),
           ),
-
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: OTPTextField(
-              length:6 ,
+              length: 6,
               width: MediaQuery.of(context).size.width,
-              fieldWidth: MediaQuery.of(context).size.width/8,
-              style: const TextStyle(
-                  fontSize: 17,
-                color: Colors.white
-              ),
+              fieldWidth: MediaQuery.of(context).size.width / 8,
+              style: const TextStyle(fontSize: 17, color: Colors.white),
               textFieldAlignment: MainAxisAlignment.spaceAround,
               fieldStyle: FieldStyle.underline,
               otpFieldStyle: OtpFieldStyle(enabledBorderColor: AppColors.yellow),
@@ -71,7 +73,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
               child: InkWell(
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
-                    return const VerificationScreen();
+                    return const FirstHomeScreen();
                   }));
                 },
                 child: Container(
