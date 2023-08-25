@@ -63,7 +63,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               child: InkWell(
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
-                    return VarificationScreen();
+                    return VerificationScreen();
                   }));
                 },
                 child: Padding(

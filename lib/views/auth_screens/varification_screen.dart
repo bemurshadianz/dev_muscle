@@ -1,30 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:otp_text_field/otp_field.dart';
+import 'package:otp_text_field/otp_field_style.dart';
+import 'package:otp_text_field/style.dart';
 
 import '../../Utils/app_functions.dart';
 import '../../utils/colors.dart';
 
-class VarificationScreen extends StatelessWidget {
-  const VarificationScreen({Key? key}) : super(key: key);
+class VerificationScreen extends StatefulWidget {
+  const VerificationScreen({Key? key}) : super(key: key);
 
+  @override
+  State<VerificationScreen> createState() => _VerificationScreenState();
+}
+
+class _VerificationScreenState extends State<VerificationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: IconButton(
-            icon: Icon(Icons.arrow_back_ios),
-            splashRadius: 100,
-            onPressed: () {
-              Navigator.pop(context);
-            },
-          ),
-        ),
-      ),
+
       body: Column(
         children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 45,left: 25),
+            child: Row(
+
+              children: [
+                Container(
+                  decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: AppColors.lightGrey
+                  ),
+                  child:  const Padding(
+                    padding: EdgeInsets.all(6.0),
+                    child: Icon(Icons.arrow_back_sharp,color: Colors.white,),
+                  )),
+              ],
+            ),
+          ),
+
           customText(
               "VERIFICATION",
               "CHECK YOUR EMAIL.WE'VE SENT YOU\n"
@@ -33,13 +46,32 @@ class VarificationScreen extends StatelessWidget {
             "Did you receive any code",
             style: TextStyle(color: AppColors.yellow),
           ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: OTPTextField(
+              length:6 ,
+              width: MediaQuery.of(context).size.width,
+              fieldWidth: MediaQuery.of(context).size.width/8,
+              style: const TextStyle(
+                  fontSize: 17,
+                color: Colors.white
+              ),
+              textFieldAlignment: MainAxisAlignment.spaceAround,
+              fieldStyle: FieldStyle.underline,
+              otpFieldStyle: OtpFieldStyle(enabledBorderColor: AppColors.yellow),
+              onCompleted: (pin) {
+                print("Completed: " + pin);
+              },
+            ),
+          ),
           Expanded(
               child: Container(
             child: Center(
               child: InkWell(
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
-                    return VarificationScreen();
+                    return const VerificationScreen();
                   }));
                 },
                 child: Container(
@@ -48,7 +80,7 @@ class VarificationScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 25, horizontal: 100),
+                    padding: EdgeInsets.symmetric(vertical: 13, horizontal: 100),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.center,
