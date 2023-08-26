@@ -7,7 +7,7 @@ import '../utils_screens/bottom_button.dart';
 import 'activity_level_screen.dart';
 
 class GoalSelectScreen extends StatefulWidget {
-  GoalSelectScreen({Key? key}) : super(key: key);
+  const GoalSelectScreen({Key? key}) : super(key: key);
 
   @override
   State<GoalSelectScreen> createState() => _SelectGoalState();
@@ -50,7 +50,7 @@ class _SelectGoalState extends State<GoalSelectScreen> {
               ),
             ),
             Expanded(
-              child: Container(
+              child: SizedBox(
                 width: MediaQuery.of(context).size.width,
                 child: WheelChooser.custom(
                   itemSize: 80,

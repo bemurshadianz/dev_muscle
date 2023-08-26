@@ -84,7 +84,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 child: TextFormField(
                   decoration: const InputDecoration(
                     hintText: 'Password again',
-                    suffixIcon: const Icon(
+                    suffixIcon: Icon(
                       Icons.visibility,
                       color: AppColors.lightGrey,
                     ),

@@ -30,7 +30,7 @@ class _ActivityLevelScreenState extends State<ActivityLevelScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "YOUR REGULAR PHYSICAL\NACTIVITY LEVEL",
+                    "YOUR REGULAR PHYSICALNACTIVITY LEVEL",
                     textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold),
                   ),
@@ -49,7 +49,7 @@ class _ActivityLevelScreenState extends State<ActivityLevelScreen> {
               ),
             ),
             Expanded(
-              child: Container(
+              child: SizedBox(
                 width: MediaQuery.of(context).size.width,
                 child: WheelChooser.custom(
                   itemSize: 80,

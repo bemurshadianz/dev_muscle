@@ -7,7 +7,7 @@ class IntroScreen extends StatefulWidget {
   String h1;
   String h2;
   bool showNextButton;
-  IntroScreen(this.imageLink, this.h1, this.h2, {this.showNextButton = false});
+  IntroScreen(this.imageLink, this.h1, this.h2, {super.key, this.showNextButton = false});
 
   @override
   State<IntroScreen> createState() => _IntroScreenState();
@@ -22,7 +22,7 @@ class _IntroScreenState extends State<IntroScreen> {
         children: [
           Expanded(
             flex: 3,
-            child: Container(
+            child: SizedBox(
               width: MediaQuery.of(context).size.width,
               child: Image.asset(
                 widget.imageLink,

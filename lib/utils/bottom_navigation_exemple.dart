@@ -10,7 +10,7 @@ class BottomNavigationExample extends StatefulWidget {
 class _BottomNavigationExampleState extends State {
   int _selectedTab = 0;
 
-  List _pages = [
+  final List _pages = [
     Center(
       child: Text("Home"),
     ),

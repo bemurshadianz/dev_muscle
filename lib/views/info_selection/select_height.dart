@@ -7,7 +7,7 @@ import '../../Utils/app_functions.dart';
 import '../utils_screens/bottom_button.dart';
 
 class SelectHeight extends StatefulWidget {
-  SelectHeight({Key? key}) : super(key: key);
+  const SelectHeight({Key? key}) : super(key: key);
 
   @override
   State<SelectHeight> createState() => _SelectHeightState();
@@ -50,7 +50,7 @@ class _SelectHeightState extends State<SelectHeight> {
               ),
             ),
             Expanded(
-              child: Container(
+              child: SizedBox(
                 width: MediaQuery.of(context).size.width,
                 child: WheelChooser.custom(
                   itemSize: 80,

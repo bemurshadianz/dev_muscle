@@ -63,7 +63,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
               fieldStyle: FieldStyle.underline,
               otpFieldStyle: OtpFieldStyle(enabledBorderColor: AppColors.yellow),
               onCompleted: (pin) {
-                print("Completed: " + pin);
+                print("Completed: $pin");
               },
             ),
           ),
