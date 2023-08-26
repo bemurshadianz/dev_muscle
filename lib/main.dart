@@ -1,4 +1,4 @@
-import 'package:dev_muscle/utils/bottom_navigation_exemple.dart';
+import 'package:dev_muscle/home_screen/first_home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,6 +18,6 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const BottomNavigationExample();
+    return const FirstHomeScreen();
   }
 }

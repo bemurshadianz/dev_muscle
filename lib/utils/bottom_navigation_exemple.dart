@@ -15,7 +15,7 @@ class _BottomNavigationExampleState extends State {
       child: Text("Home"),
     ),
     Center(
-      child: Text("Components"),
+      child: Text("Insight"),
     ),
     Center(
       child: Text("Notification"),
@@ -25,26 +25,23 @@ class _BottomNavigationExampleState extends State {
     ),
   ];
 
-  _changeTab(int index) {
-    setState(() {
-      _selectedTab = index;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: _pages[_selectedTab],
+      body: _pages.elementAt(_selectedTab),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.black12,
+        type: BottomNavigationBarType.fixed,
         currentIndex: _selectedTab,
-        onTap: (index) => _changeTab(index),
+        onTap: (int index) {
+          _selectedTab = index;
+          setState(() {});
+        },
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
-        items: [
+        items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.bar_chart), label: "Components"),
+          BottomNavigationBarItem(icon: Icon(Icons.bar_chart), label: "Insight"),
           BottomNavigationBarItem(icon: Icon(Icons.notifications_active), label: "Notifications"),
           BottomNavigationBarItem(icon: Icon(Icons.person_pin_rounded), label: "Profile"),
         ],

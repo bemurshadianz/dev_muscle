@@ -10,14 +10,18 @@ class FirstHomeScreen extends StatefulWidget {
 class _FirstHomeScreenState extends State<FirstHomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
+    return const Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Padding(
-            padding: EdgeInsets.only(top: 100, left: 25),
+          Padding(
+            padding: EdgeInsets.only(
+              top: 100,
+              left: 15,
+            ),
             child: Text(
               "HELLO SARAH,",
+              textAlign: TextAlign.left,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 25,
@@ -25,40 +29,84 @@ class _FirstHomeScreenState extends State<FirstHomeScreen> {
               ),
             ),
           ),
-          const Text(
-            "Good morning",
-            style: TextStyle(fontSize: 12, color: Colors.white),
+          Padding(
+            padding: EdgeInsets.only(left: 15),
+            child: Text(
+              "Good morning",
+              textAlign: TextAlign.left,
+              style: TextStyle(fontSize: 12, color: Colors.white),
+            ),
           ),
-          const SizedBox(
+          SizedBox(
             height: 5,
           ),
-          const Row(
+          Row(
             children: [
               Padding(
-                padding: EdgeInsets.only(top: 50, left: 20),
+                padding: EdgeInsets.only(
+                  top: 40,
+                  left: 20,
+                ),
                 child: Text(
                   "Today Workout Plan",
                   style: TextStyle(color: Colors.white, fontSize: 14),
                 ),
               ),
               Expanded(child: SizedBox()),
-              Text(
-                "Fri 25 Aug",
-                style: TextStyle(color: Colors.white, fontSize: 12),
+              Padding(
+                padding: EdgeInsets.only(right: 20, top: 30),
+                child: Text(
+                  "Fri 25 Aug",
+                  // textDirection: TextDecoration.ltr,
+                  textAlign: TextAlign.left,
+                  style: TextStyle(color: Colors.yellow, fontSize: 12),
+                ),
               )
             ],
           ),
           Stack(
             children: [
-              Container(
-                height: 100,
-                width: 100,
-                child: Image.network(
-                  "https://w0.peakpx.com/wallpaper/656/174/HD-wallpaper-fitnes-gym-fitness-girl-model.jpg",
+              Image(
+                image: NetworkImage(
+                    "https://e1.pxfuel.com/desktop-wallpaper/493/540/desktop-wallpaper-fitness-gym-girls.jpg"),
+              ),
+              Positioned(
+                bottom: 50,
+                left: 20,
+                child: Text(
+                  "Day 1 -Warm Up",
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+              Positioned(
+                bottom: 30,
+                left: 20,
+                child: Text(
+                  "| 07:00 - 08:00 AM",
+                  style: TextStyle(color: Colors.yellow, fontSize: 12),
+                ),
+              )
+            ],
+          ),
+          Row(
+            children: [
+              Padding(
+                padding: EdgeInsets.only(left: 20, top: 10),
+                child: Text(
+                  "Workout Categories",
+                  style: TextStyle(color: Colors.white, fontSize: 14),
+                ),
+              ),
+              Expanded(child: SizedBox()),
+              Padding(
+                padding: EdgeInsets.only(right: 20, top: 10),
+                child: Text(
+                  "See All",
+                  style: TextStyle(color: Colors.yellow, fontSize: 12),
                 ),
               ),
             ],
-          )
+          ),
         ],
       ),
     );
