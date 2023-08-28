@@ -10,18 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6c5a898-07ab-404c-ac65-2df4c545a6e5" name="Changes" comment="need help in FirstHomeScreen">
-      <change afterPath="$PROJECT_DIR$/lib/home_screen/workout_catagories.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils/network_images.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/workout_categories.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/workout_plan_details.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/listview_builde_1.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis_options.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis_options.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/home_screen/first_home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/first_home_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/bottom_navigation_exemple.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/bottom_navigation_exemple.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/auth_screens/signup_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/auth_screens/signup_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/auth_screens/varification_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/auth_screens/varification_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/info_selection/activity_level_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/info_selection/activity_level_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/info_selection/goal_select_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/info_selection/goal_select_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/info_selection/select_height.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/info_selection/select_height.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/intro_views/intro_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/intro_views/intro_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home_screen/workout_catagories.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home_screen/workout_plan_detail.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693049817273</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="need help in FirstHomeScreen">
+      <created>1693071199021</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1693071199021</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

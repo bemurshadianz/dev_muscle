@@ -1,5 +1,4 @@
 import 'package:dev_muscle/utils/colors.dart';
-import 'package:dev_muscle/utils/network_images.dart';
 import 'package:flutter/material.dart';
 
 class FirstHomeScreen extends StatefulWidget {
@@ -12,9 +11,13 @@ class FirstHomeScreen extends StatefulWidget {
 class _FirstHomeScreenState extends State<FirstHomeScreen> {
   String workOutCategory = "Advance";
   final List_links = [
-    "https://fitnessvolt.com/wp-content/uploads/2020/05/david-laid.jpg",
-    "https://rare-gallery.com/4534958-men-fitness-model.html",
-    "https://img.freepik.com/premium-photo/strong-handsome-young-man-fitness-model-with-sporty-naked-body-muscles-does-training-workout-gym_338491-13500.jpg?w=2000",
+    "https://prod-ne-cdn-media.puregym.com/media/819394/gym-workout-plan-for-gaining-muscle_header.jpg?quality=50",
+    "https://prod-ne-cdn-media.puregym.com/media/819394/gym-workout-plan-for-gaining-muscle_header.jpg?quality=50",
+    "https://prod-ne-cdn-media.puregym.com/media/819394/gym-workout-plan-for-gaining-muscle_header.jpg?quality=50",
+
+    // "https://fitnessvolt.com/wp-content/uploads/2020/05/david-laid.jpg",
+    // "https://rare-gallery.com/4534958-men-fitness-model.html",
+    // "https://img.freepik.com/premium-photo/strong-handsome-young-man-fitness-model-with-sporty-naked-body-muscles-does-training-workout-gym_338491-13500.jpg?w=2000",
   ];
 
   @override
@@ -202,11 +205,15 @@ class _FirstHomeScreenState extends State<FirstHomeScreen> {
               ),
             ),
           ),
-          ListView.builder(
-            itemCount: List_links.length,
-            itemBuilder: (context, index) {
-              return NetworkAssests();
-            },
+          Row(
+            children: [
+              ListView.builder(
+                itemCount: List_links.length,
+                itemBuilder: (context, index) {
+                  return Image.network(List_links[index]);
+                },
+              ),
+            ],
           ),
         ],
       ),
