@@ -10,14 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6c5a898-07ab-404c-ac65-2df4c545a6e5" name="Changes" comment="need help in FirstHomeScreen">
-      <change afterPath="$PROJECT_DIR$/lib/home_screen/workout_categories.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/home_screen/workout_plan_details.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils/listview_builde_1.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/popup_prouser.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/listview_builder_listtile.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/home_screen/first_home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/first_home_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home_screen/workout_catagories.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home_screen/workout_plan_detail.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home_screen/workout_categories.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/workout_categories.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home_screen/workout_plan_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/workout_plan_details.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/bottom_navigation_exemple.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/bottom_navigation_exemple.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/listview_builde_1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/listview_builde_1.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693071199021</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="need help in FirstHomeScreen">
+      <created>1693185311057</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1693185311057</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

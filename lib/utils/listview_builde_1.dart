@@ -72,7 +72,7 @@ class ListviewBuilder1 extends StatelessWidget {
                   //  width: MediaQuery.of(context).size.width,
                   height: 230,
                   child: Image.network(
-                    "https://st3.depositphotos.com/2853475/16558/i/1600/depositphotos_165589400-stock-photo-man-training-in-a-gym.jpg",
+                    "https://www.dmoose.com/cdn/shop/articles/main_image_9b2a4e20-b024-4633-a05b-14c065e22ddd.jpg?v=1671625569",
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -94,6 +94,26 @@ class ListviewBuilder1 extends StatelessWidget {
                     ),
                   ),
                 ),
+                Positioned(
+                  bottom: 15,
+                  right: 15,
+                  child: Container(
+                    height: 22,
+                    width: 50,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      color: Colors.red,
+                    ),
+                    child: Text(
+                      textAlign: TextAlign.center,
+                      "PRO",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
@@ -102,7 +122,7 @@ class ListviewBuilder1 extends StatelessWidget {
           padding: const EdgeInsets.all(30),
           child: Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(10),
             ),
             child: Stack(
               children: [
@@ -132,6 +152,26 @@ class ListviewBuilder1 extends StatelessWidget {
                     ),
                   ),
                 ),
+                Positioned(
+                  bottom: 15,
+                  right: 15,
+                  child: Container(
+                    height: 22,
+                    width: 50,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      color: Colors.red,
+                    ),
+                    child: Text(
+                      textAlign: TextAlign.center,
+                      "PRO",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
@@ -140,7 +180,7 @@ class ListviewBuilder1 extends StatelessWidget {
           padding: const EdgeInsets.all(30),
           child: Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(44),
+              borderRadius: BorderRadius.circular(10),
             ),
             child: Stack(
               children: [

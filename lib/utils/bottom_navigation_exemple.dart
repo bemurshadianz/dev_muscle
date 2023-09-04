@@ -1,50 +1,49 @@
+import 'package:dev_muscle/home_screen/first_home_screen.dart';
 import 'package:flutter/material.dart';
 
-class BottomNavigationExample extends StatefulWidget {
-  const BottomNavigationExample({Key? key}) : super(key: key);
+import '../views/auth_screens/forgotpassword.dart';
+import '../views/auth_screens/varification_screen.dart';
+
+class DashboardScreen extends StatefulWidget {
+  const DashboardScreen({Key? key}) : super(key: key);
 
   @override
-  _BottomNavigationExampleState createState() => _BottomNavigationExampleState();
+  _DashboardScreenState createState() => _DashboardScreenState();
 }
 
-class _BottomNavigationExampleState extends State {
-  int _selectedTab = 0;
-
-  final List _pages = [
-    Center(
-      child: Text("Home"),
-    ),
-    Center(
-      child: Text("Insight"),
-    ),
-    Center(
-      child: Text("Notification"),
-    ),
-    Center(
-      child: Text("Profile"),
-    ),
+class _DashboardScreenState extends State {
+  int selectTab = 0;
+  final List screens = [
+    FirstHomeScreen(),
+    ForgotPassword(),
+    VerificationScreen(),
+    Container(color: Colors.blue),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _pages.elementAt(_selectedTab),
+      body: screens[selectTab],
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.black12,
+        backgroundColor: Color(0xff1C1C1E),
         type: BottomNavigationBarType.fixed,
-        currentIndex: _selectedTab,
-        onTap: (int index) {
-          _selectedTab = index;
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Color(0xff505050),
+        currentIndex: selectTab,
+        items: const [
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home_filled,
+              ),
+              label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.bar_chart), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.notifications_active), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: ""),
+        ],
+        onTap: (index) {
+          selectTab = index;
           setState(() {});
         },
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.grey,
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.bar_chart), label: "Insight"),
-          BottomNavigationBarItem(icon: Icon(Icons.notifications_active), label: "Notifications"),
-          BottomNavigationBarItem(icon: Icon(Icons.person_pin_rounded), label: "Profile"),
-        ],
       ),
     );
   }

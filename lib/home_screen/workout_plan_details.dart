@@ -35,7 +35,9 @@ class WorkoutPlanDetails extends StatelessWidget {
               ),
             ],
           ),
-          Expanded(
+          Container(
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20))),
             child: Padding(
               padding: const EdgeInsets.only(top: 25, left: 20),
               child: Column(
@@ -49,7 +51,7 @@ class WorkoutPlanDetails extends StatelessWidget {
                     height: 10,
                   ),
                   Text(
-                    "04 Workouts for Biginner",
+                    "04 Workouts for Beginner",
                     style: TextStyle(
                       color: AppColors.yellow,
                     ),
@@ -66,14 +68,18 @@ class WorkoutPlanDetails extends StatelessWidget {
                           color: Color(0xff2C2C2E),
                           borderRadius: BorderRadius.circular(22),
                         ),
-                        child: Icon(
-                          Icons.play_circle,
-                          size: 19,
-                          color: Colors.white,
-                        ),
-                        Text(
-                          "  60 min",
-                          style: TextStyle(color: Colors.white),
+                        child: Row(
+                          children: const [
+                            Icon(
+                              Icons.play_circle,
+                              size: 19,
+                              color: Colors.white,
+                            ),
+                            Text(
+                              "  60 min",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
                         ),
                       ),
                       SizedBox(
@@ -86,25 +92,32 @@ class WorkoutPlanDetails extends StatelessWidget {
                           color: Color(0xff2C2C2E),
                           borderRadius: BorderRadius.circular(22),
                         ),
-                        child: Icon(
-                          Icons.local_fire_department_outlined,
-                          size: 19,
-                          color: Colors.white,
-                        ),
-                        Text(
-                          "  350 Cal",
-                          style: TextStyle(color: Colors.white),
+                        child: Row(
+                          children: const [
+                            Icon(
+                              Icons.local_fire_department_outlined,
+                              size: 19,
+                              color: Colors.white,
+                            ),
+                            Text(
+                              "  350 Cal",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
                         ),
                       ),
                     ],
                   ),
-                  Text(
-                    "Want your body to be healthy."
-                    " Join our program with directions according to body’s goals."
-                    " Increasing physical strength is the goal of strenght training. "
-                    "Maintain body fitness by doing physical "
-                    "exercise at least 2-3 times a week. ",
-                    style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.w400),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 30, bottom: 20, right: 10, left: 10),
+                    child: Text(
+                      "Want your body to be healthy."
+                      " Join our program with directions according to body’s goals."
+                      " Increasing physical strength is the goal of strength training. "
+                      "Maintain body fitness by doing physical "
+                      "exercise at least 2-3 times a week. ",
+                      style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.w400),
+                    ),
                   ),
                 ],
               ),

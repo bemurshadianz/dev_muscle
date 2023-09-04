@@ -1,7 +1,7 @@
-import 'package:dev_muscle/utils/listview_builde_1.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/colors.dart';
+import '../utils/listview_builde_1.dart';
 
 class WorkoutCategories extends StatefulWidget {
   const WorkoutCategories({Key? key}) : super(key: key);
@@ -12,6 +12,13 @@ class WorkoutCategories extends StatefulWidget {
 
 class _WorkoutCategoriesState extends State<WorkoutCategories> {
   String workOutCategory = "Advance";
+
+  final listLinks = [
+    "https://prod-ne-cdn-media.puregym.com/media/819394/gym-workout-plan-for-gaining-muscle_header.jpg?quality=50",
+    "https://fitnessvolt.com/wp-content/uploads/2020/05/david-laid.jpg",
+    "https://rare-gallery.com/4534958-men-fitness-model.html",
+    "https://img.freepik.com/premium-photo/strong-handsome-young-man-fitness-model-with-sporty-naked-body-muscles-does-training-workout-gym_338491-13500.jpg?w=2000",
+  ];
 
   @override
   Widget build(BuildContext context) {
