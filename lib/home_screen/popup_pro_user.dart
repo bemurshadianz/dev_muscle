@@ -35,7 +35,7 @@ class PopUpProUser extends StatelessWidget {
             height: MediaQuery.of(context).size.height * 0.5,
             width: MediaQuery.of(context).size.width * 0.80,
             decoration: BoxDecoration(
-                color: AppColors.lightGrey,
+                color: AppColors.lightGrey.withAlpha(150),
                 borderRadius: BorderRadius.circular(16)),
             child: Column(
               children: [
