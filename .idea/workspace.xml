@@ -9,17 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6c5a898-07ab-404c-ac65-2df4c545a6e5" name="Changes" comment="need help in FirstHomeScreen">
-      <change afterPath="$PROJECT_DIR$/lib/home_screen/popup_prouser.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils/listview_builder_listtile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home_screen/first_home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/first_home_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home_screen/workout_categories.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/workout_categories.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home_screen/workout_plan_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/workout_plan_details.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/bottom_navigation_exemple.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/bottom_navigation_exemple.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/listview_builde_1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/listview_builde_1.dart" afterDir="false" />
-    </list>
+    <list default="true" id="e6c5a898-07ab-404c-ac65-2df4c545a6e5" name="Changes" comment="need help in popup prouser screen" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693185311057</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="need help in popup prouser screen">
+      <created>1693819139716</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1693819139716</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,7 +215,8 @@
     <MESSAGE value="plz check auth screens need help there" />
     <MESSAGE value="need help in verificatin screen" />
     <MESSAGE value="need help in FirstHomeScreen" />
-    <option name="LAST_COMMIT_MESSAGE" value="need help in FirstHomeScreen" />
+    <MESSAGE value="need help in popup prouser screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="need help in popup prouser screen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
