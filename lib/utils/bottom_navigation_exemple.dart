@@ -1,8 +1,8 @@
 import 'package:dev_muscle/home_screen/first_home_screen.dart';
+import 'package:dev_muscle/home_screen/popup_Standart_user.dart';
+import 'package:dev_muscle/home_screen/subscription_screen.dart';
+import 'package:dev_muscle/home_screen/workout_categories.dart';
 import 'package:flutter/material.dart';
-
-import '../views/auth_screens/forgotpassword.dart';
-import '../views/auth_screens/varification_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({Key? key}) : super(key: key);
@@ -15,9 +15,9 @@ class _DashboardScreenState extends State {
   int selectTab = 0;
   final List screens = [
     FirstHomeScreen(),
-    ForgotPassword(),
-    VerificationScreen(),
-    Container(color: Colors.blue),
+    WorkoutCategories(),
+    PopUpStandartUser(),
+    SubscriptionScreen(),
   ];
 
   @override

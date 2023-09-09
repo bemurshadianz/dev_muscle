@@ -1,5 +1,7 @@
 import 'package:dev_muscle/Utils/app_assets.dart';
 import 'package:dev_muscle/Utils/app_functions.dart';
+import 'package:dev_muscle/utils/bottom_navigation_exemple.dart';
+import 'package:dev_muscle/views/auth_screens/forgotpassword.dart';
 import 'package:dev_muscle/views/utils_screens/bottom_button.dart';
 import 'package:flutter/material.dart';
 
@@ -67,8 +69,6 @@ class _LogInScreenState extends State<LogInScreen> {
                         ),
                         const SizedBox(width: 20),
 
-                        /// Sign up Button
-
                         GestureDetector(
                           onTap: () {
                             buttonValue = 1;
@@ -128,19 +128,6 @@ class _LogInScreenState extends State<LogInScreen> {
                         ),
                       ),
                     ),
-
-                  // if (buttonValue == 1)
-                  // const Positioned(
-                  //   bottom: 5,
-                  //   left: 5,
-                  //   right: 5,
-                  //   child: Center(
-                  //     child:  Text(
-                  //       'ENTER YOUR INFORMATION BELOW OR\nLOGIN WITH OTHER ACCOUNT',
-                  //       style: TextStyle(fontSize: 33, fontWeight: FontWeight.bold, color: Colors.white),
-                  //     ),
-                  //   ),
-                  // ),
                 ],
               )),
           Container(
@@ -237,7 +224,12 @@ class _LogInScreenState extends State<LogInScreen> {
                   children: [
                     if (buttonValue == 0)
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          goto(
+                            context,
+                            ForgotPassword(),
+                          );
+                        },
                         child: const Text(
                           "Forgot Password",
                           style: TextStyle(
@@ -247,41 +239,6 @@ class _LogInScreenState extends State<LogInScreen> {
                           ),
                         ),
                       ),
-
-                    // Row(
-                    //   mainAxisAlignment: MainAxisAlignment.start,
-                    //   children: [
-                    //     Container(
-                    //       decoration: const BoxDecoration(shape: BoxShape.circle),
-                    //       child: InkWell(
-                    //         onTap: () {
-                    //           const Icon(
-                    //             Icons.apple_sharp,
-                    //             color: AppColors.lightGrey,
-                    //           );
-                    //         },
-                    //       ),
-                    //     ),
-                    //     // Container(
-                    //     //   decoration: const BoxDecoration(shape: BoxShape.circle),
-                    //     //   child: InkWell(
-                    //     //     onTap: () {
-                    //     //       const Icon(
-                    //     //         Icons.g_mobiledata,
-                    //     //         color: AppColors.lightGrey,
-                    //     //       );
-                    //     //     },
-                    //     //   ),
-                    //     // ),
-                    //     // Expanded(child: Container()),
-                    //     // BottomButton(
-                    //     //   title: ('Login'),
-                    //     //   onTap: () {
-                    //     //     goto(context, SignupScreen());
-                    //     //   },
-                    //     // ),
-                    //   ],
-                    // ),
                   ],
                 ),
                 Expanded(child: SizedBox()),
@@ -315,11 +272,13 @@ class _LogInScreenState extends State<LogInScreen> {
                       ),
                       Expanded(child: SizedBox()),
                       BottomButton(
-                        title: (buttonValue == 0 ? "Login" : "Signup"),
-                        onTap: () {
-                          goto(context, LogInScreen());
-                        },
-                      ),
+                          title: (buttonValue == 0 ? "Login" : "Signup"),
+                          onTap: () {
+                            goto(
+                              context,
+                              DashboardScreen(),
+                            );
+                          }),
                     ],
                   ),
                 ),

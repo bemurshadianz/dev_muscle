@@ -30,7 +30,7 @@ class _ActivityLevelScreenState extends State<ActivityLevelScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "YOUR REGULAR PHYSICALNACTIVITY LEVEL",
+                    "YOUR REGULAR PHYSICAL ACTIVITY LEVEL",
                     textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold),
                   ),

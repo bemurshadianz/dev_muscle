@@ -4,8 +4,8 @@ import 'package:dev_muscle/home_screen/subscription_screen.dart';
 import 'package:dev_muscle/utils/colors.dart';
 import 'package:flutter/material.dart';
 
-class PopUpProUser extends StatelessWidget {
-  const PopUpProUser({Key? key}) : super(key: key);
+class PopUpStandartUser extends StatelessWidget {
+  const PopUpStandartUser({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class PopUpProUser extends StatelessWidget {
                     image: DecorationImage(
                         fit: BoxFit.fill,
                         image: NetworkImage(
-                            "https://img.wallscloud.net/uploads/thumb/2561441245/_fitness,_blonde,_dumbbell,_sexy,_pose_(1)-1024x576-MM-80.webp")),
+                            "https://cdn.oxygenmag.com/wp-content/uploads/2019/12/shutterstock_793136707-1.jpg")),
                   ),
                   child: Stack(
                     children: [
@@ -56,7 +56,7 @@ class PopUpProUser extends StatelessWidget {
                         bottom: 50,
                         left: 20,
                         child: Text(
-                          "Lower Body Strength",
+                          "Upgrade to Premium",
                           style: TextStyle(color: Colors.white, fontSize: 17, fontWeight: FontWeight.w600),
                         ),
                       ),
@@ -64,29 +64,9 @@ class PopUpProUser extends StatelessWidget {
                         bottom: 30,
                         left: 20,
                         child: Text(
-                          "| Workouts for Beginner",
+                          "Subscription to take an appointment",
                           style: TextStyle(
                             color: AppColors.yellow,
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        bottom: 15,
-                        right: 15,
-                        child: Container(
-                          height: 22,
-                          width: 50,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(5),
-                            color: Colors.red,
-                          ),
-                          child: Text(
-                            textAlign: TextAlign.center,
-                            "PRO",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w700,
-                            ),
                           ),
                         ),
                       ),
@@ -119,10 +99,9 @@ class PopUpProUser extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text(
-                                "Take Appointment",
+                                "Be Premium ",
                                 style: TextStyle(color: Colors.black, fontSize: 17, fontWeight: FontWeight.w600),
                               ),
-                              Icon(Icons.play_arrow),
                             ],
                           ),
                         ),

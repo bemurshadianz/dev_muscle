@@ -19,7 +19,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
           padding: const EdgeInsets.only(top: 45, left: 25),
           child: Row(
             children: [
-              InkWell(
+              GestureDetector(
                 onTap: () {
                   Navigator.pop(context);
                 },
@@ -71,36 +71,34 @@ class _ForgotPasswordState extends State<ForgotPassword> {
           style: TextStyle(color: AppColors.yellow),
         ),
         Expanded(
-            child: Container(
-          child: Center(
-            child: InkWell(
-              onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
-                  return VerificationScreen();
-                }));
-              },
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Container(
-                  width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
-                    color: Colors.yellow,
-                    borderRadius: BorderRadius.circular(100),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 15),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text(
-                          "Send",
-                          style: TextStyle(color: Colors.black, fontSize: 20),
-                        ),
-                        Icon(Icons.play_arrow),
-                      ],
-                    ),
+            child: Center(
+          child: GestureDetector(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
+                return VerificationScreen();
+              }));
+            },
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  color: Colors.yellow,
+                  borderRadius: BorderRadius.circular(100),
+                ),
+                child: const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 15),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Send",
+                        style: TextStyle(color: Colors.black, fontSize: 20),
+                      ),
+                      Icon(Icons.play_arrow),
+                    ],
                   ),
                 ),
               ),

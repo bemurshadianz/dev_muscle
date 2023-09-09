@@ -1,3 +1,4 @@
+import 'package:dev_muscle/home_screen/workout_categories.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/colors.dart';
@@ -18,7 +19,7 @@ class WorkoutPlanDetails extends StatelessWidget {
               Positioned(
                 top: 40,
                 left: 30,
-                child: InkWell(
+                child: GestureDetector(
                   onTap: () {
                     Navigator.pop(context);
                   },
@@ -26,9 +27,11 @@ class WorkoutPlanDetails extends StatelessWidget {
                       decoration: const BoxDecoration(shape: BoxShape.circle, color: AppColors.lightGrey),
                       child: const Padding(
                         padding: EdgeInsets.all(6.0),
-                        child: Icon(
-                          Icons.arrow_back_sharp,
-                          color: Colors.white,
+                        child: Center(
+                          child: Icon(
+                            Icons.arrow_back_ios_sharp,
+                            color: Colors.white,
+                          ),
                         ),
                       )),
                 ),
@@ -120,6 +123,112 @@ class WorkoutPlanDetails extends StatelessWidget {
                     ),
                   ),
                 ],
+              ),
+            ),
+          ),
+          ListView.builder(
+              itemCount: 10,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Container(
+                    // height: 96,
+                    // width: 327,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(16)),
+                      color: Color(0xff2C2C2E),
+                    ),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 10, left: 10),
+                          child: Container(
+                            height: 64,
+                            width: 64,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(100),
+                              ),
+                            ),
+                            child: Image.network(
+                              "https://cimg2.ibsrv.net/cimg/www.fitday.com/693x350_85-1/554/shutterstock_583754929-334554.jpg",
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "Simple Warm-Up",
+                                  style: TextStyle(color: Colors.white, fontSize: 17, fontWeight: FontWeight.w600),
+                                ),
+                                SizedBox(
+                                  width: 15,
+                                ),
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "Exercise",
+                                  style: TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.w400),
+                                ),
+                                Expanded(child: SizedBox()),
+                                Icon(
+                                  Icons.keyboard_arrow_down_rounded,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              "0 30",
+                              style: TextStyle(color: Colors.yellowAccent, fontSize: 11, fontWeight: FontWeight.w400),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              }),
+          Center(
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
+                  return WorkoutCategories();
+                }));
+              },
+              child: Container(
+                height: 50,
+                width: 263,
+                // width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  color: Color(0xffD0FD3E),
+                  borderRadius: BorderRadius.circular(100),
+                ),
+                child: const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 15),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Start Workout ",
+                        style: TextStyle(color: Colors.black, fontSize: 17, fontWeight: FontWeight.w600),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ),
           ),

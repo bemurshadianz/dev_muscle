@@ -1,7 +1,9 @@
-import 'package:dev_muscle/home_screen/popup_pro_user.dart';
+import 'package:dev_muscle/home_screen/appointment.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  final listOne = [];
+
   runApp(
     MaterialApp(
       home: const App(),
@@ -18,6 +20,6 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const PopUpProUser();
+    return Appointment();
   }
 }

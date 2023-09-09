@@ -9,6 +9,7 @@ class ListviewBuilder1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: ListView.builder(
           itemCount: 10,
           itemBuilder: (context, index) {

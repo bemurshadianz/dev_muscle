@@ -1,4 +1,4 @@
-import 'package:dev_muscle/home_screen/first_home_screen.dart';
+import 'package:dev_muscle/utils/bottom_navigation_exemple.dart';
 import 'package:flutter/material.dart';
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/otp_field_style.dart';
@@ -68,33 +68,31 @@ class _VerificationScreenState extends State<VerificationScreen> {
             ),
           ),
           Expanded(
+              child: Center(
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
+                  return const DashboardScreen();
+                }));
+              },
               child: Container(
-            child: Center(
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
-                    return const FirstHomeScreen();
-                  }));
-                },
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.yellow,
-                    borderRadius: BorderRadius.circular(100),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 13, horizontal: 100),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text(
-                          "Verify",
-                          style: TextStyle(color: Colors.black, fontSize: 20),
-                        ),
-                        Icon(Icons.play_arrow),
-                      ],
-                    ),
+                decoration: BoxDecoration(
+                  color: Colors.yellow,
+                  borderRadius: BorderRadius.circular(100),
+                ),
+                child: const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 13, horizontal: 100),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Verify",
+                        style: TextStyle(color: Colors.black, fontSize: 20),
+                      ),
+                      Icon(Icons.play_arrow),
+                    ],
                   ),
                 ),
               ),

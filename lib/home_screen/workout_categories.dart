@@ -128,7 +128,7 @@ class _WorkoutCategoriesState extends State<WorkoutCategories> {
               ),
             ),
           ),
-          ListviewBuilder1(),
+          Expanded(child: ListviewBuilder1()),
         ],
       ),
     );

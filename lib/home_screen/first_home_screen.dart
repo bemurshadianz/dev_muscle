@@ -127,7 +127,7 @@ class _FirstHomeScreenState extends State<FirstHomeScreen> {
                 child: Row(
                   children: [
                     Expanded(
-                      child: InkWell(
+                      child: GestureDetector(
                         onTap: () {
                           workOutCategory = "Beginner";
                           setState(() {});

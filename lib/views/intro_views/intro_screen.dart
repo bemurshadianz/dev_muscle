@@ -53,33 +53,31 @@ class _IntroScreenState extends State<IntroScreen> {
                   ),
                   if (widget.showNextButton)
                     Expanded(
+                        child: Center(
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context) {
+                            return SelectGender();
+                          }));
+                        },
                         child: Container(
-                      child: Center(
-                        child: InkWell(
-                          onTap: () {
-                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context) {
-                              return SelectGender();
-                            }));
-                          },
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.yellow,
-                              borderRadius: BorderRadius.circular(100),
-                            ),
-                            child: const Padding(
-                              padding: EdgeInsets.symmetric(vertical: 12, horizontal: 35),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    "Start Now",
-                                    style: TextStyle(color: Colors.black),
-                                  ),
-                                  Icon(Icons.play_arrow),
-                                ],
-                              ),
+                          decoration: BoxDecoration(
+                            color: Colors.yellow,
+                            borderRadius: BorderRadius.circular(100),
+                          ),
+                          child: const Padding(
+                            padding: EdgeInsets.symmetric(vertical: 12, horizontal: 35),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "Start Now",
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                                Icon(Icons.play_arrow),
+                              ],
                             ),
                           ),
                         ),

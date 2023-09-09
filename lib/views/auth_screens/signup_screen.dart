@@ -112,7 +112,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     children: [
                       Container(
                         decoration: const BoxDecoration(shape: BoxShape.circle),
-                        child: InkWell(
+                        child: GestureDetector(
                           onTap: () {
                             const Icon(
                               Icons.apple_sharp,
@@ -123,7 +123,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       ),
                       Container(
                         decoration: const BoxDecoration(shape: BoxShape.circle),
-                        child: InkWell(
+                        child: GestureDetector(
                           onTap: () {
                             const Icon(
                               Icons.g_mobiledata,
@@ -132,9 +132,6 @@ class _SignupScreenState extends State<SignupScreen> {
                           },
                         ),
                       ),
-
-                      // Image(image: AssetImage(AppAssets.applepic)),
-                      // Image(image: AssetImage(AppAssets.googlepic)),
                       Expanded(child: Container()),
                       BottomButton(
                         title: ('Login'),
@@ -144,8 +141,6 @@ class _SignupScreenState extends State<SignupScreen> {
                       ),
                     ],
                   ),
-                  // Image(image: AssetImage(AppAssets.applepic)),
-                  // Image(image: AssetImage(AppAssets.googlepic)),
                 ],
               )
             ],
