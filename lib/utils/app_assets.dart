@@ -16,4 +16,5 @@ class AppAssets {
   static String googlepic = "assets/googlepic.png";
   static String applepic = "assets/applepic.png";
   static String signupscreen = "assets/signupscreen.png";
+  static String addnewcard = "assets/addnewcard.png";
 }

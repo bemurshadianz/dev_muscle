@@ -1,9 +1,8 @@
-import 'package:dev_muscle/home_screen/appointment.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  final listOne = [];
+import 'home_screen/about_profile/profile_1.dart';
 
+void main() {
   runApp(
     MaterialApp(
       home: const App(),
@@ -20,6 +19,6 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Appointment();
+    return Profile1();
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../utils/colors.dart';
-import '../utils/listview_builde_1.dart';
+import '../../utils/colors.dart';
+import '../../utils/listview_builde_1.dart';
 
 class WorkoutCategories extends StatefulWidget {
   const WorkoutCategories({Key? key}) : super(key: key);

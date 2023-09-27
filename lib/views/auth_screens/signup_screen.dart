@@ -59,7 +59,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 padding: const EdgeInsets.all(20),
                 child: TextFormField(
                   decoration: const InputDecoration(
-                    hintText: 'Email',
+                    hintText: 'Card Holder Name',
                     suffixIcon: Icon(
                       Icons.download_done_outlined,
                       color: AppColors.lightGrey,

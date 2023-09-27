@@ -1,3 +1,4 @@
+import 'package:dev_muscle/home_screen/appointment.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/colors.dart';
@@ -14,7 +15,7 @@ class WritingReview extends StatelessWidget {
             padding: const EdgeInsets.only(top: 57, left: 25),
             child: Row(
               children: [
-                InkWell(
+                GestureDetector(
                   onTap: () {
                     Navigator.pop(context);
                   },
@@ -64,7 +65,7 @@ class WritingReview extends StatelessWidget {
               child: GestureDetector(
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
-                    return Reviews();
+                    return Appointment();
                   }));
                 },
                 child: Container(

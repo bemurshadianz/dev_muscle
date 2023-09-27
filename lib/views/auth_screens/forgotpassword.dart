@@ -47,15 +47,11 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 padding: const EdgeInsets.all(20),
                 child: TextFormField(
                   decoration: const InputDecoration(
-                    // hintText: 'Email',
-                    // hintStyle: TextStyle(color: Colors.white, fontSize: 20),
                     labelText: "Email",
                     labelStyle: TextStyle(color: Colors.white),
-
                     enabledBorder: UnderlineInputBorder(
                       borderSide: BorderSide(color: Colors.white30),
                     ),
-
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.purple),
                     ),

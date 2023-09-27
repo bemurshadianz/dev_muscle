@@ -91,7 +91,7 @@ class _ReviewsState extends State<Reviews> {
                   Expanded(
                     child: InkWell(
                       onTap: () {
-                        reviews = "";
+                        reviews = "Critical";
                         setState(() {});
                       },
                       child: Container(

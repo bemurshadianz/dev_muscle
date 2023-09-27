@@ -1,7 +1,7 @@
-import 'package:dev_muscle/home_screen/first_home_screen.dart';
+import 'package:dev_muscle/home_screen/bottom_screens/first_home_screen.dart';
+import 'package:dev_muscle/home_screen/bottom_screens/workout_categories.dart';
 import 'package:dev_muscle/home_screen/popup_Standart_user.dart';
 import 'package:dev_muscle/home_screen/subscription_screen.dart';
-import 'package:dev_muscle/home_screen/workout_categories.dart';
 import 'package:flutter/material.dart';
 
 class DashboardScreen extends StatefulWidget {

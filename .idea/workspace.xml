@@ -9,30 +9,38 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6c5a898-07ab-404c-ac65-2df4c545a6e5" name="Changes" comment="need help in popup prouser screen">
-      <change afterPath="$PROJECT_DIR$/lib/home_screen/appointment.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/home_screen/fitness_instructor.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/home_screen/popup_Standart_user.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/home_screen/reviews.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/home_screen/subscription_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/home_screen/trainer_detail.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/home_screen/writing_review.dart" afterDir="false" />
+    <list default="true" id="e6c5a898-07ab-404c-ac65-2df4c545a6e5" name="Changes" comment="need help in appointment screen">
+      <change afterPath="$PROJECT_DIR$/assets/addnewcard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/Video_pause.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/about_profile/Languague_1.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/about_profile/edit_profile.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/about_profile/languages.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/about_profile/notification_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/about_profile/privacy_policy.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/about_profile/pro_profile.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/about_profile/profile_1.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/about_profile/settings.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/about_profile/units_of_measure.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/add_new_card.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/bottom_screens/insight.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/bottom_screens/notifications.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/edit_card.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/payment.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/payment_complete.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home_screen/video.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home_screen/first_home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/first_home_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home_screen/popup_pro_user.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/popup_pro_user.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home_screen/workout_categories.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/workout_categories.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home_screen/appointment.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/appointment.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home_screen/first_home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/bottom_screens/first_home_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home_screen/reviews.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/reviews.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home_screen/workout_categories.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/bottom_screens/workout_categories.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/home_screen/workout_plan_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/workout_plan_details.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home_screen/writing_review.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen/writing_review.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/app_assets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/app_assets.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/utils/bottom_navigation_exemple.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/bottom_navigation_exemple.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/listview_builde_1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/listview_builde_1.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/views/auth_screens/forgotpassword.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/auth_screens/forgotpassword.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/auth_screens/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/auth_screens/login_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/views/auth_screens/signup_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/auth_screens/signup_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/auth_screens/varification_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/auth_screens/varification_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/info_selection/activity_level_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/info_selection/activity_level_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/intro_views/intro_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/intro_views/intro_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/intro_views/intro_screen_2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/intro_views/intro_screen_2.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
@@ -80,11 +88,11 @@
       <recent name="C:\Users\khura\AndroidStudioProjects\dev_muscle\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\khura\AndroidStudioProjects\dev_muscle\lib\home_screen\bottom_screens" />
       <recent name="C:\Users\khura\AndroidStudioProjects\dev_muscle\assets" />
       <recent name="C:\Users\khura\AndroidStudioProjects\dev_muscle\lib\views\auth_screens" />
       <recent name="C:\Users\khura\AndroidStudioProjects\dev_muscle\lib\views\info_selection" />
       <recent name="C:\Users\khura\AndroidStudioProjects\dev_muscle\lib\views\utils_screens" />
-      <recent name="C:\Users\khura\AndroidStudioProjects\dev_muscle\lib\Views\IntroViews" />
     </key>
   </component>
   <component name="RunManager">
@@ -224,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693819599898</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="need help in appointment screen">
+      <created>1694224471825</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1694224471825</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,7 +264,8 @@
     <MESSAGE value="need help in verificatin screen" />
     <MESSAGE value="need help in FirstHomeScreen" />
     <MESSAGE value="need help in popup prouser screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="need help in popup prouser screen" />
+    <MESSAGE value="need help in appointment screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="need help in appointment screen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -263,6 +279,31 @@
           <url>file://$PROJECT_DIR$/lib/home_screen/popup_Standart_user.dart</url>
           <line>75</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/home_screen/bottom_screens/first_home_screen.dart</url>
+          <line>209</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/home_screen/add_new_card.dart</url>
+          <line>172</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/home_screen/bottom_screens/insight.dart</url>
+          <line>64</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/home_screen/about_profile/notification_button.dart</url>
+          <line>18</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/home_screen/about_profile/notification_button.dart</url>
+          <line>227</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
