@@ -42,41 +42,58 @@ class PrivacyPolicy extends StatelessWidget {
               ],
             ),
           ),
-          Text(
-            "Lorem ipsum dolor sit amet\n"
-            "Consectetur adipiscing elit. Natoque\n"
-            "phasellus lobortis mattis cursus faucibus\n"
-            "hac proin risus. Turpis phasellus massa\n"
-            "ullamcorper volutpat. Ornare commodo non\n"
-            "integer fermentum nisi, morbi id. Vel tortor\n"
-            "mauris feugiat amet, maecenas facilisis\n"
-            "risus, in faucibus. Vestibulum ullamcorper\n"
-            "fames eget enim diam fames faucibus duis\n"
-            "ac. Aliquam non tellus semper in dignissim\n"
-            "nascetur venenatis lacus.\n"
-            "Lectus vel non varius interdum vel tellus\n"
-            "sed mattis. Sit laoreet auctor arcu mauris\n"
-            "tincidunt sociis tristique pharetra neque.\n"
-            "Aliquam pharetra elementum nisl sapien. Erat \n"
-            "nisl morbi eu dolor in. Sapien ut lacus dui\n"
-            "libero morbi tristique.Sit praesent mi, \n"
-            "dolor, magna in pellentesque sollicitudin\n"
-            "odio sed. Sit nibh aliquam enim ipsum\n"
-            "lectus sem fermentum congue velit.\n"
-            "Purus habitant odio in morbi aliquet\n"
-            "velit pulvinar. Facilisis ut amet interdum\n"
-            "pretium. Fames pretium eget orci facilisis\n"
-            "mattis est libero facilisis ullamcorper.\n"
-            "Est auctor amet egestas risus libero et.\n"
-            "Auctor faucibus sit id fringilla vitae.\n"
-            "Ac volutpat sodales tristique ut netus turpis.\n"
-            "Lorem ipsum dolor sit amet, consectetur ",
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.w600,
-              fontSize: 15,
+          Padding(
+            padding: const EdgeInsets.all(25),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                Text(
+                  "Lorem ipsum dolor sit amet",
+                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 17),
+                ),
+                Text(
+                  "\n "
+                  "Consectetur adipiscing elit. Natoque\n"
+                  "phasellus lobortis mattis cursus faucibus\n"
+                  "hac proin risus. Turpis phasellus massa\n"
+                  "ullamcorper volutpat. Ornare commodo non\n"
+                  "integer fermentum nisi, morbi id. Vel tortor\n"
+                  "mauris feugiat amet, maecenas facilisis\n"
+                  "risus, in faucibus. Vestibulum ullamcorper\n"
+                  "fames eget enim diam fames faucibus duis\n"
+                  "ac. Aliquam non tellus semper in dignissim\n"
+                  "nascetur venenatis lacus.\n"
+                  "\n"
+                  "Lectus vel non varius interdum vel tellus\n"
+                  "sed mattis. Sit laoreet auctor arcu mauris\n"
+                  "tincidunt sociis tristique pharetra neque.\n"
+                  "Aliquam pharetra elementum nisl sapien. Erat \n"
+                  "nisl morbi eu dolor in. Sapien ut lacus dui\n"
+                  "libero morbi tristique.\n"
+                  "\n"
+                  "Sit praesent mi,"
+                  "dolor, magna in pellentesque sollicitudin"
+                  "odio sed. Sit nibh aliquam enim ipsum\n"
+                  "lectus sem fermentum congue velit.\n"
+                  "Purus habitant odio in morbi aliquet\n"
+                  "velit pulvinar. Facilisis ut amet interdum\n"
+                  "pretium. Fames pretium eget orci facilisis\n"
+                  "mattis est libero facilisis ullamcorper.\n"
+                  "Est auctor amet egestas risus libero et.\n"
+                  "Auctor faucibus sit id fringilla vitae.\n"
+                  "Ac volutpat sodales tristique ut netus turpis.\n"
+                  "\n"
+                  "\n"
+                  "Lorem ipsum dolor sit amet, consectetur ",
+                  style: TextStyle(
+                    color: Color(0xffB5B5B5),
+                    fontWeight: FontWeight.w600,
+                    fontSize: 15,
+                  ),
+                ),
+              ],
             ),
-          )
+          ),
         ],
       ),
     );

@@ -1,6 +1,5 @@
+import 'package:dev_muscle/home_screen/payment_complete.dart';
 import 'package:flutter/material.dart';
-
-import 'home_screen/about_profile/profile_1.dart';
 
 void main() {
   runApp(
@@ -19,6 +18,6 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Profile1();
+    return PaymentComplete();
   }
 }

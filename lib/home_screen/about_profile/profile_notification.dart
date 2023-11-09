@@ -2,9 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../../utils/colors.dart';
 
-class UnitsOfMeasure extends StatelessWidget {
-  const UnitsOfMeasure({Key? key}) : super(key: key);
+class ProfileNotification extends StatefulWidget {
+  const ProfileNotification({Key? key}) : super(key: key);
 
+  @override
+  State<ProfileNotification> createState() => _ProfileNotificationState();
+}
+
+class _ProfileNotificationState extends State<ProfileNotification> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +37,7 @@ class UnitsOfMeasure extends StatelessWidget {
                   width: 45,
                 ),
                 Text(
-                  "UNITS OF MEASURES",
+                  "Notification",
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w700,
@@ -55,22 +60,20 @@ class UnitsOfMeasure extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
-                  children: [
+                  children: const [
                     Text(
-                      "Metric",
+                      "Workout Reminders",
                       style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.w600),
                     ),
                     Expanded(
                       child: SizedBox(),
                     ),
-                    InkWell(
-                      onTap: () {
-                        Navigator.pop(context);
-                      },
-                      child: Icon(
-                        Icons.radio_button_checked,
-                        color: Colors.yellow,
-                      ),
+                    Icon(
+                      Icons.toggle_off_outlined,
+                      color: Colors.white,
+                    ),
+                    SizedBox(
+                      height: 12.0,
                     ),
                   ],
                 ),
@@ -87,15 +90,15 @@ class UnitsOfMeasure extends StatelessWidget {
                 child: Row(
                   children: const [
                     Text(
-                      "Imperial",
+                      "Program Notifications",
                       style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.w600),
                     ),
                     Expanded(
                       child: SizedBox(),
                     ),
                     Icon(
-                      Icons.radio_button_checked,
-                      color: Colors.yellow,
+                      Icons.toggle_off_outlined,
+                      color: Colors.white,
                     ),
                   ],
                 ),
@@ -106,6 +109,10 @@ class UnitsOfMeasure extends StatelessWidget {
                   color: Color(0xff3A3A3C),
                   height: .5,
                 ),
+              ),
+              Text(
+                "You can manage your app notification permission in your Phone Settings",
+                style: TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.w400),
               ),
             ]),
           ),

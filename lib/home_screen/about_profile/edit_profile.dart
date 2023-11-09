@@ -29,7 +29,7 @@ class EditProfile extends StatelessWidget {
                       )),
                 ),
                 SizedBox(
-                  width: 45,
+                  width: 90,
                 ),
                 Text(
                   "Edit Profile",
@@ -42,14 +42,18 @@ class EditProfile extends StatelessWidget {
               ],
             ),
           ),
+          SizedBox(
+            height: 20,
+          ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 10, left: 10),
                 child: Center(
                   child: Container(
-                    height: 64,
-                    width: 64,
+                    height: 120,
+                    width: 120,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(
                         Radius.circular(100),
@@ -67,9 +71,20 @@ class EditProfile extends StatelessWidget {
               ),
             ],
           ),
-          Container(
-            color: Color(0xff3A3A3C),
-            height: .5,
+          Padding(
+            padding: const EdgeInsets.all(20),
+            child: TextFormField(
+              decoration: const InputDecoration(
+                labelText: "Name",
+                labelStyle: TextStyle(color: Colors.white),
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white30),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.purple),
+                ),
+              ),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(20),
@@ -85,29 +100,6 @@ class EditProfile extends StatelessWidget {
                 ),
               ),
             ),
-          ),
-          Container(
-            color: Color(0xff3A3A3C),
-            height: .5,
-          ),
-          Padding(
-            padding: const EdgeInsets.all(20),
-            child: TextFormField(
-              decoration: const InputDecoration(
-                labelText: "Email",
-                labelStyle: TextStyle(color: Colors.white),
-                enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white30),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.purple),
-                ),
-              ),
-            ),
-          ),
-          Container(
-            color: Color(0xff3A3A3C),
-            height: .5,
           ),
           Center(
             child: Padding(
@@ -115,7 +107,7 @@ class EditProfile extends StatelessWidget {
               child: Container(
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
-                  color: Colors.yellow,
+                  color: Color(0xffD0FD3E),
                   borderRadius: BorderRadius.circular(100),
                 ),
                 child: const Padding(
@@ -129,7 +121,6 @@ class EditProfile extends StatelessWidget {
                         "Save",
                         style: TextStyle(color: Colors.black, fontSize: 20),
                       ),
-
                     ],
                   ),
                 ),

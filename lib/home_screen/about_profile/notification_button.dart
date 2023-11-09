@@ -221,7 +221,7 @@ class _NotificationButtonState extends State<NotificationButton> {
                   height: .5,
                 ),
                 SizedBox(
-                  height: 14,
+                  height: 10,
                 ),
                 Row(
                   children: const [
@@ -246,19 +246,31 @@ class _NotificationButtonState extends State<NotificationButton> {
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  "Time for your workout session ",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 15,
-                  ),
-                ),
-                SizedBox(
-                  height: 14,
+                Row(
+                  children: [
+                    Text(
+                      "Time for your workout session ",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 15,
+                      ),
+                    ),
+                    Expanded(
+                      child: SizedBox(),
+                    ),
+                    Container(
+                      height: 79,
+                      width: 60,
+                      decoration: BoxDecoration(
+                        color: Color(0xffFF2424),
+                      ),
+                      child: Icon(
+                        Icons.delete_sharp,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
                 ),
                 Container(
                   color: Color(0xff3A3A3C),

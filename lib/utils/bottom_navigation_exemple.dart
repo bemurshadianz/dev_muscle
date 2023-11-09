@@ -1,7 +1,7 @@
+import 'package:dev_muscle/home_screen/about_profile/notification_button.dart';
 import 'package:dev_muscle/home_screen/bottom_screens/first_home_screen.dart';
+import 'package:dev_muscle/home_screen/bottom_screens/insight.dart';
 import 'package:dev_muscle/home_screen/bottom_screens/workout_categories.dart';
-import 'package:dev_muscle/home_screen/popup_Standart_user.dart';
-import 'package:dev_muscle/home_screen/subscription_screen.dart';
 import 'package:flutter/material.dart';
 
 class DashboardScreen extends StatefulWidget {
@@ -16,8 +16,8 @@ class _DashboardScreenState extends State {
   final List screens = [
     FirstHomeScreen(),
     WorkoutCategories(),
-    PopUpStandartUser(),
-    SubscriptionScreen(),
+    NotificationButton(),
+    Insight(),
   ];
 
   @override
