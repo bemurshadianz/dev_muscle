@@ -9,9 +9,7 @@ class PaymentComplete extends StatelessWidget {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(
-              top: 223,
-            ),
+            padding: const EdgeInsets.only(top: 223, right: 32),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -42,12 +40,15 @@ class PaymentComplete extends StatelessWidget {
           ),
           Column(
             children: const [
-              Text(
-                "You’ve book a new appointment \nwith your trainer",
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.white,
+              Padding(
+                padding: EdgeInsets.only(right: 50),
+                child: Text(
+                  "You’ve book a new appointment \nwith your trainer",
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.white,
+                  ),
                 ),
               ),
             ],

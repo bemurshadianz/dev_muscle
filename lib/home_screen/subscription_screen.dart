@@ -65,10 +65,7 @@ class SubscriptionScreen extends StatelessWidget {
             child: Container(
               height: 74,
               width: 311,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16),
-                color: Colors.red,
-              ),
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(16), color: Colors.red.shade300),
               child: ListTile(
                 leading: Icon(Icons.radio_button_checked),
                 title: Text(

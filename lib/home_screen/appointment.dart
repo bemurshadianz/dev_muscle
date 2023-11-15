@@ -84,53 +84,56 @@ class _AppointmentState extends State<Appointment> {
                     ),
                   ),
                 ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          "Richard will",
-                          style: TextStyle(color: Colors.white, fontSize: 17, fontWeight: FontWeight.w600),
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
-                        Container(
-                          height: 16,
-                          width: 33,
-                          decoration: BoxDecoration(
-                            color: Colors.yellowAccent,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Richard will",
+                            style: TextStyle(color: Colors.white, fontSize: 17, fontWeight: FontWeight.w600),
                           ),
-                          child: Center(
-                            child: Text(
-                              "4.8",
-                              style: TextStyle(
-                                color: Colors.black,
+                          SizedBox(
+                            width: 15,
+                          ),
+                          Container(
+                            height: 16,
+                            width: 33,
+                            decoration: BoxDecoration(
+                              color: Colors.yellowAccent,
+                            ),
+                            child: Center(
+                              child: Text(
+                                "4.8",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Text(
-                          "High Intensity Training",
-                          style: TextStyle(color: AppColors.yellow, fontSize: 11, fontWeight: FontWeight.w400),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      "5 years experience",
-                      style: TextStyle(color: AppColors.yellow, fontSize: 11, fontWeight: FontWeight.w400),
-                    ),
-                  ],
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Text(
+                            "High Intensity Training",
+                            style: TextStyle(color: AppColors.yellow, fontSize: 11, fontWeight: FontWeight.w400),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        "5 years experience",
+                        style: TextStyle(color: AppColors.yellow, fontSize: 11, fontWeight: FontWeight.w400),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),

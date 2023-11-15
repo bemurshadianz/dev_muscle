@@ -176,10 +176,6 @@ class _PaymentState extends State<Payment> {
                     SizedBox(
                       height: 10,
                     ),
-                    Text(
-                      "5 years experience",
-                      style: TextStyle(color: AppColors.yellow, fontSize: 11, fontWeight: FontWeight.w400),
-                    ),
                   ],
                 ),
                 SizedBox(
@@ -253,6 +249,7 @@ class _PaymentState extends State<Payment> {
                         fontSize: 11,
                       ),
                     ),
+                    Expanded(child: SizedBox()),
                     Text(
                       "\$ 175.99",
                       style: TextStyle(
